@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Albert sans";
+    margin: 0px;
+    color: white;
+}
+
+  /* FOND */
+body{
+    margin: 0;
+    background: rgb(0, 0, 0);
+    height: 1000vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+  /* PLACEMENT CAROUSEL */
+.carousel{
+  margin: 0 auto;
+    padding: 10px 0;
+    overflow: hidden;
+    display: flex;
+    overflow-x: 0;
+    width: 99%;
+    filter: blur(0.2px);
+    z-index: 0;
+}
+
+  /* PLACEMENTS IMAGES */
+.group {
+    display: flex;
+    grid-auto-flow: column;
+    padding-left: 0px;
+    grid-auto-columns: 400px;
+    justify-items: stretch;
+    animation : spin 20s infinite linear;
+    margin-top: 70px;
+    margin-bottom: -180px;
+    z-index: 0;
+  }
+
+  /* IMAGES */
+.group img{
+    height: 50%;
+    object-fit: cover;
+    opacity: 73%;
+}
+  /* ANIAMTION ROULETTE */
+@keyframes spin{
+ 0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* ANIMATION PAUSE */
+/*.carousel {
+    &:hover .group {
+      animation-play-state: paused;
+    }
+  } */
+  
+    /* DÉGRADÉ */
+.carousel::before,
+.carousel::after{
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 25%;
+    z-index: 1;
+    
+}
+
+.carousel::before{
+    left: 0%;
+    top: 0;
+}
+
+.carousel::after{
+    right: 0%;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+  /* BARRE DE SCROLL */
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.citation{
+  z-index: 1;
+  margin-top: -10px;
+  margin-bottom: -40px;
+  opacity: 70%;
+}
+
+.text1{
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  max-width: 65ch;
+  
+}
+.text2{
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+header{
+
+  margin-top: 50px;
+  margin-bottom: -50px;
+  font-size: 32px;
+  opacity: 80%;
+
+}
