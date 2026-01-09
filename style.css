@@ -120,6 +120,13 @@ header{
   margin-top: 50px;
   margin-bottom: -50px;
   font-size: 32px;
-  opacity: 80%;
+  opacity: 70%;
 
+}
+
+.soustitre{
+  margin-top: 50px;
+  margin-bottom: -50px;
+  font-size: 12px;
+  opacity: 70%;
 }
