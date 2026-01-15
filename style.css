@@ -38,15 +38,15 @@ body{
     justify-items: stretch;
     animation : spin 20s infinite linear;
     margin-top: 70px;
-    margin-bottom: -180px;
+    margin-bottom: -100px;
     z-index: 0;
   }
 
   /* IMAGES */
 .group img{
-    height: 50%;
+    height: 70%;
     object-fit: cover;
-    opacity: 73%;
+    opacity: 90%;
 }
   /* ANIAMTION ROULETTE */
 @keyframes spin{
@@ -94,15 +94,13 @@ body{
 
 .citation{
   z-index: 1;
-  margin-top: -10px;
+  margin-top: -15px;
   margin-bottom: -40px;
-  opacity: 70%;
 }
 
 .text1{
   text-align: center;
   font-weight: 400;
-  font-style: italic;
   font-size: 16px;
   max-width: 65ch;
   
@@ -120,7 +118,7 @@ header{
   margin-top: 50px;
   margin-bottom: -50px;
   font-size: 32px;
-  opacity: 70%;
+
 
 }
 
@@ -128,5 +126,5 @@ header{
   margin-top: 50px;
   margin-bottom: -50px;
   font-size: 12px;
-  opacity: 70%;
+
 }
